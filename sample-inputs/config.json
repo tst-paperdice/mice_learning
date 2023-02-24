@@ -1,0 +1,22 @@
+{
+    "datasets": [
+        {
+            "data": "sample-inputs/out_30pkt.csv",
+            "labels": "sample-inputs/out_30pkt_labels.csv"
+        }
+    ],
+    "features": {
+            "names": ["BurstDepths", "DirSignBurstBytes", "DirSignSizes", "Directions", "Entropies", "Sizes"],
+            "window_num": 1,
+            "window_size": 30
+    },
+    "train_test_split": 0.5,
+    "num_triggers": 5,
+    "num_test_models": 5,
+    "poison_props": "0.001,0.01",
+    "name": "ss_bg_poison",
+    "num_generations": 2,
+    "num_packets": 16,
+    "keep_all": true,
+    "num_jobs": 4
+}
